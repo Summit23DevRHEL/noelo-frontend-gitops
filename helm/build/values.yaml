@@ -1,0 +1,15 @@
+app:
+  name: poi-map-app
+  namespace: noelo
+  cluster: .apps.summit23-dr.w6gk.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/Summit23DevRHEL/noelo-frontend
+  org: Summit23DevRHEL
+  name: noelo-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: noelo/poi-map-app
+  tag: latest
